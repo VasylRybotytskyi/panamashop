@@ -5,7 +5,7 @@ import Layout from "./Layout/Layout";
 function App() {
   return (
     <div className="App">
-      <Router basename="/panama_shop/">
+      <Router basename="/panamashop/">
         <Routes>
           <Route path="/*" element={<Layout />} />
         </Routes>

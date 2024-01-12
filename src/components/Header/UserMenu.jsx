@@ -2,7 +2,7 @@ import { signOut } from "firebase/auth";
 import { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeUser } from "../../redux/panamaSlice";
-import { auth } from "../../firebase.config";
+import { auth } from "../../../firebase.config";
 import { toast } from "react-toastify";
 
 const UserMenu = ({ handleOpenProfile, handleOpenModal }) => {

@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase.config";
+import { db } from "../../firebase.config";
 
 export const sneakersApi = createApi({
   reducerPath: "sneakersApi",

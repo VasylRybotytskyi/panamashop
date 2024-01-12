@@ -4,7 +4,7 @@ import { SlBasket } from "react-icons/sl";
 import UserMenu from "./UserMenu";
 import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
-import { auth } from "../../firebase.config";
+import { auth } from "../../../firebase.config";
 import { toast } from "react-toastify";
 import { useDispatch, useSelector } from "react-redux";
 import { removeUser } from "../../redux/panamaSlice";
