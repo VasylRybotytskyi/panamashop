@@ -5,7 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import { CiHeart } from "react-icons/ci";
 import { SlBasket } from "react-icons/sl";
 import { addToCart, addToFavorite } from "../redux/panamaSlice";
-import { nanoid } from "nanoid";
 
 const ProductsCard = ({ item }) => {
   const dispatch = useDispatch();

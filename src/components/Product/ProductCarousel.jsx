@@ -16,9 +16,9 @@ const ProductCarousel = ({ children, image }) => {
     );
 
   return (
-    <div className="max-w-full lg:w-[90%]  rounded-lg overflow-hidden relative">
+    <div className=" w-full rounded-lg overflow-hidden relative">
       <div
-        className="flex transition-transform ease-out duration-500 "
+        className=" flex transition-transform ease-out duration-500 "
         style={{ transform: `translateX(-${currentImg * 100}%)` }}
       >
         {children}

@@ -47,22 +47,22 @@ const Product = () => {
   return (
     <div>
       {/* Основний контейнер */}
-      <div className="max-w-screen-2xl mx-auto my-10 flex flex-col md:flex-row gap-10 px-3 md:px-5 lg:px-10">
+      <div className="max-w-screen-2xl mx-auto my-10 flex flex-col md:flex-row gap-10 px-3 md:px-5 lg:px-10 ">
         {/* Блок зображення продукту */}
-        <div className="md:w-[50%] lg:w-[40%] flex lg:items-center justify-center relative ">
+        <div className=" md:w-[50%] lg:w-[40%] flex xl:items-center justify-center relative ">
           <ProductCarousel image={images}>
             {Array.isArray(images) &&
               images.map((image, index) => (
                 <img
                   key={index}
-                  className="w-full h-[350px] md:h-[550px] object-cover flex-shrink-0"
+                  className="w-full h-[350px] xl:h-[550px]  object-cover flex-shrink-0"
                   src={image}
                   alt="Зображення продукту"
                 />
               ))}
           </ProductCarousel>
           {/* Показує знижку, якщо вона є */}
-          <div className="absolute top-4 right-4">
+          <div className="absolute top-4 left-4">
             {discount > 0 && (
               <p className="bg-black text-white font-semibold rounded-lg px-3 py-1">
                 Знижка
